@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css'; // Make sure to create a styles.css file
+import './globals.css'; // Updated to globals.css
 
 const Page = () => {
   return (
