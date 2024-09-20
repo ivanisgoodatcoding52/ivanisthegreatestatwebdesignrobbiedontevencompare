@@ -647,6 +647,34 @@ a.tee {
     p, h2, h3 { orphans: 3; widows: 3; }
     h2, h3{ page-break-after: avoid; }
 }
+
+* {
+  float: none;
+  background: #fff;
+  color: #000;
+}
+
+body { font-size: 80%; }
+/*
+     FILE ARCHIVED ON 01:23:05 May 01, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 02:38:24 Sep 20, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.469
+  exclusion.robots: 0.015
+  exclusion.robots.policy: 0.007
+  esindex: 0.009
+  cdx.remote: 14.381
+  LoadShardBlock: 311.149 (3)
+  PetaboxLoader3.datanode: 349.99 (4)
+  load_resource: 109.227
+  PetaboxLoader3.resolve: 65.116
+*/
 /*
      FILE ARCHIVED ON 01:23:05 May 01, 2012 AND RETRIEVED FROM THE
      INTERNET ARCHIVE ON 02:38:23 Sep 20, 2024.
