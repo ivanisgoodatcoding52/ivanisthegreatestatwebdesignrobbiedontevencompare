@@ -1,12 +1,14 @@
-// page.tsx
-
 export default function HomePage() {
   return (
     <div style={mainStyle}>
       <section style={contentStyle}>
         <h1>Welcome to Minecraft!</h1>
-        <p>Minecraft is a game about placing blocks to build anything you can imagine. At night monsters come out, make sure to build a shelter before that happens. It also has music by C418!</p>
-        <p>So far 27,723,051 people have registered and 5,744,712 people bought the game. <a href="#">More stats here.</a></p>
+        <p>
+          Minecraft is a game about placing blocks to build anything you can imagine. At night monsters come out, make sure to build a shelter before that happens. It also has music by C418!
+        </p>
+        <p>
+          So far 27,723,051 people have registered and 5,744,712 people bought the game. <a href="#">More stats here.</a>
+        </p>
 
         <div style={buttonContainer}>
           <button>Buy Now!</button>
@@ -25,10 +27,11 @@ export default function HomePage() {
   );
 }
 
+// Define styles with type-safe values
 const mainStyle = {
   display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center', // No need for `as 'center'`
+  flexDirection: 'column' as const, // Assert type correctness using `as const`
+  alignItems: 'center' as const, // Assert type correctness
   padding: '50px',
 };
 
@@ -37,7 +40,7 @@ const contentStyle = {
   padding: '20px',
   borderRadius: '10px',
   width: '80%',
-  textAlign: 'center', // No need for `as 'center'`
+  textAlign: 'center' as const,
 };
 
 const buttonContainer = {
@@ -46,5 +49,5 @@ const buttonContainer = {
 
 const communityStyle = {
   marginTop: '50px',
-  textAlign: 'center', // No need for `as 'center'`
+  textAlign: 'center' as const,
 };
