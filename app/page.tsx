@@ -28,7 +28,7 @@ export default function HomePage() {
 const mainStyle = {
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'center',
+  alignItems: 'center', // No need for `as 'center'`
   padding: '50px',
 };
 
@@ -37,7 +37,7 @@ const contentStyle = {
   padding: '20px',
   borderRadius: '10px',
   width: '80%',
-  textAlign: 'center' as 'center',
+  textAlign: 'center', // No need for `as 'center'`
 };
 
 const buttonContainer = {
@@ -46,5 +46,5 @@ const buttonContainer = {
 
 const communityStyle = {
   marginTop: '50px',
-  textAlign: 'center' as 'center',
+  textAlign: 'center', // No need for `as 'center'`
 };
