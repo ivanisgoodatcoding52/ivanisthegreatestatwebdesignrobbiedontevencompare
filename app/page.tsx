@@ -1,7 +1,4 @@
 // app/page.tsx
-
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center bg-gray-900 text-white font-sans">
