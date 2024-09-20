@@ -1,4 +1,5 @@
-import Image from "next/image";
+// Remove the unused Image import
+// import Image from "next/image";
 
 export default function Home() {
   return (
@@ -30,9 +31,6 @@ export default function Home() {
 
       {/* Sidebar with Buy Now and Characters */}
       <section className="flex flex-col items-center space-y-4">
-        <div>
-          <Image src="/images/steve.png" alt="Steve" width={180} height={240} /> {/* Use your own image */}
-        </div>
         <button className="bg-[#ff9b1e] text-white font-bold py-2 px-6 rounded-full">
           Buy Now!
         </button>
