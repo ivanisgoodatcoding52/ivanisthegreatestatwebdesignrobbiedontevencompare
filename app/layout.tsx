@@ -1,6 +1,6 @@
 import './globals.css';
 import { ReactNode } from 'react';
-import Image from 'next/image'; // Add this
+import Image from 'next/image'; // Use Next.js Image component
 
 export const metadata = {
   title: 'Minecraft 2012 Replica',
@@ -34,3 +34,20 @@ export default function Layout({ children }: { children: ReactNode }) {
     </>
   );
 }
+
+// Define styles
+const headerStyle = {
+  display: 'flex',
+  justifyContent: 'space-between',
+  padding: '10px 50px',
+  backgroundColor: '#333',
+  color: 'white',
+  alignItems: 'center',
+};
+
+const footerStyle = {
+  backgroundColor: '#333',
+  padding: '10px',
+  color: '#fff',
+  textAlign: 'center' as const, // Use `as const` for type correctness
+};
