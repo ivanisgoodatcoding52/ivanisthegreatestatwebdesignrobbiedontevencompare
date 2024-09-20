@@ -1,7 +1,6 @@
-// layout.tsx
-
 import './globals.css';
 import { ReactNode } from 'react';
+import Image from 'next/image'; // Add this
 
 export const metadata = {
   title: 'Minecraft 2012 Replica',
@@ -13,7 +12,7 @@ export default function Layout({ children }: { children: ReactNode }) {
     <>
       <header style={headerStyle}>
         <div>
-          <img src="/minecraft-logo.png" alt="Minecraft Logo" style={{ height: '60px' }} />
+          <Image src="/minecraft-logo.png" alt="Minecraft Logo" width={180} height={60} />
         </div>
         <nav>
           <a href="/">Home</a>
@@ -35,20 +34,3 @@ export default function Layout({ children }: { children: ReactNode }) {
     </>
   );
 }
-
-// Simple inline styles to mimic Minecraft feel
-const headerStyle = {
-  display: 'flex',
-  justifyContent: 'space-between',
-  padding: '10px 50px',
-  backgroundColor: '#333',
-  color: 'white',
-  alignItems: 'center',
-};
-
-const footerStyle = {
-  backgroundColor: '#333',
-  padding: '10px',
-  color: '#fff',
-  textAlign: 'center',
-};
